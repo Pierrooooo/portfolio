@@ -1,0 +1,354 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/frs1swj.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: sofia-pro, sans-serif;
+}
+
+header {
+  min-height: 95vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 100;
+}
+header nav {
+  position: fixed;
+  top: 0;
+  background-color: #FDF6F8;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 5px 10px 5px rgba(17, 15, 14, 0.1);
+  box-shadow: 0px 5px 10px 5px rgba(17, 15, 14, 0.1);
+  padding: 1.5rem 3rem;
+}
+header nav .logo {
+  width: 200px;
+  border: none;
+}
+header nav .logo img {
+  width: 100%;
+}
+header nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px #CD2658;
+  border-radius: 3px;
+}
+header nav a img {
+  max-width: 2rem;
+  height: auto;
+  margin: 0 6px;
+}
+header nav a p {
+  padding: 0.5rem 1rem;
+  color: #0E214D;
+  position: relative;
+}
+header nav a p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #CD2658;
+  z-index: 1000000000000;
+}
+header section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  width: 100%;
+  margin-top: 90px;
+}
+header section div {
+  max-width: 800px;
+}
+header section div .welcome_text {
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 600;
+  width: fit-content;
+  color: #060F22;
+}
+header section div .portfolio_text {
+  font-size: 8rem;
+  line-height: 8rem;
+  font-weight: 900;
+  background-image: linear-gradient(120deg, #CD2658 5%, #2658cd 50%, #3CD3AF 95%);
+  width: fit-content;
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  margin-left: 2rem;
+}
+header section div p {
+  color: #060F22;
+  margin-top: 2rem;
+  width: 80%;
+}
+header section div p a {
+  color: #060F22;
+}
+header section .illu_link {
+  height: 400px;
+  width: 400px;
+}
+header section .illu_link div {
+  width: 100%;
+  height: 100%;
+  background-image: url("~assets/imgs/illustrations/character_portfolio.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+html {
+  background-color: #FDF6F8;
+}
+
+.big_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2100' height='1200' preserveAspectRatio='none' viewBox='0 0 2100 1200'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1023%26quot%3b)' fill='none'%3e%3crect width='2100' height='1200' x='0' y='0' fill='rgba(205%2c 38%2c 88%2c 1)'%3e%3c/rect%3e%3cpath d='M30.51 300C30.51 200 10.21 200.38 0 100C-5.05 50.38 -32.14 17.86 0 0C57.86 -32.14 90.15 -3.27 180 0C240.15 2.19 241.8 10.91 300 10.91C307.92 10.91 304.15 0.29 312.24 0C454.15 -5.16 456.12 0 600 0C750 0 750 0 900 0C1050 0 1050 0 1200 0C1350 0 1350 0 1500 0C1650 0 1650 0 1800 0C1950 0 2007.89 -57.89 2100 0C2157.89 36.39 2124.78 102.79 2100 188.57C2081.45 252.79 2013.33 237.3 2013.33 300C2013.33 414.89 2064.4 420.54 2100 543.75C2107.74 570.54 2100 571.88 2100 600C2100 750 2100 750 2100 900C2100 1050 2175 1125 2100 1200C2025 1275 1950 1200 1800 1200C1687.5 1200 1674.75 1228.26 1575 1200C1524.75 1185.76 1535.81 1115 1500 1115C1466.44 1115 1482.78 1186.82 1436.25 1200C1332.78 1229.32 1318.13 1200 1200 1200C1050 1200 1050 1200 900 1200C750 1200 750 1200 600 1200C540 1200 539.66 1204.97 480 1200C389.66 1192.47 389.17 1175 300 1175C254.17 1175 256.18 1196.15 210 1200C106.18 1208.65 66.11 1238.89 0 1200C-38.89 1177.12 -13.76 1135.61 0 1076.47C21.13 985.61 69.77 989.68 69.77 900C69.77 786.06 27.1 785.77 0 669.23C-7.78 635.77 0 634.62 0 600C0 550 -5.05 549.62 0 500C10.21 399.62 30.51 400 30.51 300' stroke='rgba(225%2c 74%2c 120%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M300 503.85C164.06 508.34 32.14 544.88 32.14 600C32.14 657.61 170.02 657.48 300 729.31C441.45 807.48 478.94 787.7 575 900C628.94 963.05 557.31 1080 600 1080C659.81 1080 778.26 1001.78 780 900C782.37 761.78 693.19 750.46 608.22 600C603.19 591.09 609.55 584.23 600 581.25C455.44 536.15 447.99 498.96 300 503.85' stroke='rgba(225%2c 74%2c 120%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M157.63 300C157.63 229.8 225.33 220.07 300 147.27C379.17 70.07 372.05 45.78 465.31 0C522.05 -27.85 532.65 0 600 0C682.5 0 727.31 -52.77 765 0C834.45 97.23 761.76 178.4 814.29 300C829.26 334.65 858.41 300.78 900 312.5C1051.27 355.13 1051.93 411.96 1200 408.7C1335.86 405.71 1341.95 364.51 1467.86 300C1491.95 287.66 1482.53 276.42 1500 255C1604.85 126.42 1593.79 100.9 1712.5 0C1743.79 -26.6 1756.25 0 1800 0C1905 0 2001.12 -57.11 2010 0C2024.45 92.89 1850.83 148.32 1846.67 300C1842.6 448.32 1907.98 458.13 1993.55 600C2034.64 668.13 2074.92 649.32 2100 720C2128.14 799.32 2100 810 2100 900C2100 1050 2175 1125 2100 1200C2025 1275 1950 1200 1800 1200C1742.64 1200 1728.88 1230.51 1685.29 1200C1578.88 1125.51 1588.47 990 1500 990C1417.08 990 1439.72 1131.94 1342.5 1200C1289.72 1236.94 1271.25 1200 1200 1200C1064.28 1200 972.98 1269.94 928.57 1200C877.74 1119.94 1019.19 1035.38 1009.52 900C1004.9 835.38 952.28 852.53 900 800C803 702.53 785.8 713.04 710.96 600C635.8 486.48 697.5 392.5 600 346.88C492.02 296.35 439.71 422.5 300 407.69C218.52 399.06 157.63 360.01 157.63 300' stroke='rgba(225%2c 74%2c 120%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1200 150C1112.35 150 1025.58 42.66 1025.58 0C1025.58 -32.34 1112.79 0 1200 0C1289.28 0 1378.57 -32.52 1378.57 0C1378.57 42.48 1288.85 150 1200 150' stroke='rgba(225%2c 74%2c 120%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M244.19 900C244.19 876 271.24 858.62 300 858.62C332.48 858.62 366.67 875.46 366.67 900C366.67 929.49 331.86 966.67 300 966.67C270.62 966.67 244.19 930.03 244.19 900' stroke='rgba(225%2c 74%2c 120%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M284.75 300C284.75 292.48 290.61 283.64 300 283.64C317.8 283.64 339.13 292.89 339.13 300C339.13 306.84 318.51 311.54 300 311.54C291.32 311.54 284.75 306.43 284.75 300' stroke='rgba(225%2c 74%2c 120%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M813.7 600C813.7 538.17 834.19 482.82 900 468.75C1027.34 441.52 1049.58 496.05 1200 517.39C1349.58 538.6 1352.7 567.05 1500 553.85C1652.7 540.17 1675.23 448.19 1800 463.64C1861.52 471.26 1825.97 538.99 1872.58 600C1975.97 735.35 1999.13 723.3 2100 856.36C2112.84 873.3 2100 878.18 2100 900C2100 1050 2175 1125 2100 1200C2025 1275 1950 1200 1800 1200C1797.8 1200 1796.66 1201.91 1795.59 1200C1712.29 1051.91 1719.37 1046.34 1631.25 900C1571.57 800.89 1559 709.09 1500 709.09C1445.65 709.09 1453.17 805 1404.55 900C1327.55 1050.46 1338.13 1068.91 1248.75 1200C1235.86 1218.91 1224.38 1200 1200 1200C1153.57 1200 1115.57 1235.39 1107.14 1200C1079.85 1085.39 1179.61 1025.35 1128.57 900C1076.04 771 1011.98 797.99 900 691.3C854.55 647.99 813.7 649.45 813.7 600' stroke='rgba(225%2c 74%2c 120%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1023'%3e%3crect width='2100' height='1200' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: repeat;
+}
+.skills_container h2 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  text-align: right;
+  color: #FDF6F8;
+  margin: 0 15% 6rem 0;
+}
+.skills_container .skills {
+  max-width: 2100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills_container .skills .skill {
+  width: 25%;
+  height: 25vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 400ms;
+}
+.skills_container .skills .skill:hover h3 {
+  opacity: 1;
+  backdrop-filter: blur(5px);
+}
+.skills_container .skills .skill:hover p {
+  opacity: 1;
+  backdrop-filter: blur(5px);
+}
+.skills_container .skills .skill h3, .skills_container .skills .skill p {
+  color: #0C362C;
+  opacity: 0;
+  text-align: center;
+  transition: 400ms;
+  backdrop-filter: blur(0);
+  padding: 0.5rem;
+}
+.skills_container .skills .skill h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding: 0.5rem 2rem;
+}
+.skills_container .skills .skill p {
+  font-size: 1rem;
+  font-weight: 600;
+  width: 80%;
+}
+
+.projects_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: transparent;
+  margin-top: 100px;
+}
+.projects_container h2 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0 0 6rem 15%;
+  color: #060F22;
+}
+.projects_container .projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 300px;
+  margin-top: 100px;
+}
+.projects_container .projects .project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: relative;
+}
+.projects_container .projects .project::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 100px;
+  height: 350px;
+  width: 650px;
+  background-color: #060F22;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(10px);
+  z-index: -10;
+}
+.projects_container .projects .project::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 100px;
+  height: 350px;
+  width: 650px;
+  background-color: #060F22;
+  z-index: -10;
+}
+.projects_container .projects .project .count {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  text-align: right;
+  font-size: 7rem;
+  font-weight: 900;
+  transform: translate(0%, -100%);
+  color: #CD2658;
+  z-index: -5;
+}
+.projects_container .projects .project img {
+  width: 35%;
+  z-index: -5;
+}
+.projects_container .projects .project div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  padding-right: 10%;
+}
+.projects_container .projects .project div h3 {
+  font-size: 2.5rem;
+  color: #CBD8F5;
+  text-shadow: 0px 8px 16px rgba(56, 10, 24, 0.25);
+  position: relative;
+  padding: 0.2rem;
+  width: fit-content;
+}
+.projects_container .projects .project div h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 35px;
+  width: 50%;
+  background-color: #CD2658;
+  z-index: -2;
+  transform: translate(50px);
+  transition: 300ms;
+}
+.projects_container .projects .project div h3:hover::after {
+  content: "";
+  height: 55px;
+  width: 140%;
+  background-color: #CD2658;
+  z-index: -2;
+  transform: translate(100px);
+}
+.projects_container .projects .project div h3::before {
+  content: "→";
+  position: absolute;
+  top: 0;
+  right: -60px;
+  color: #CBD8F5;
+  opacity: 0;
+  transform: translate(-50%);
+  transition: 300ms;
+}
+.projects_container .projects .project div h3:hover::before {
+  content: "→";
+  top: 0;
+  right: -92px;
+  color: #CBD8F5;
+  z-index: -1;
+  opacity: 1;
+  transform: translate(-50%);
+}
+.projects_container .projects .project div p span {
+  color: #CBD8F5;
+  text-shadow: 0px 8px 16px rgba(56, 10, 24, 0.25);
+  position: relative;
+  padding: 0 1rem;
+}
+.projects_container .projects .project div p span::after {
+  content: "-";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: #CBD8F5;
+  z-index: -1;
+  opacity: 1;
+  transform: translate(50%, -50%);
+}
+.projects_container .projects .project div p span:last-of-type()::after {
+  content: "";
+}
+
+/*# sourceMappingURL=style.css.map */
