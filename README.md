@@ -15,6 +15,10 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+
+# compile scss
+$ cd assets/styles
+$ sass --watch style.scss:style.css
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
