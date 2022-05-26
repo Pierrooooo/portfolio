@@ -1,6 +1,15 @@
 <template>
   <section class="projects_container">
-        <h2>Projects</h2>
+        <h2>
+          <span data-letter="P" >P</span>
+          <span data-letter="R" >R</span>
+          <span data-letter="O" >O</span>
+          <span data-letter="J" >J</span>
+          <span data-letter="E" >E</span>
+          <span data-letter="C" >C</span>
+          <span data-letter="T" >T</span>
+          <span data-letter="S" >S</span>
+          </h2>
       <div class="projects">
         <div class="project" v-for="project in projects" v-bind:key="project.projectName" >
           <p class="count" v-if="count<10">0{{count++}}</p>

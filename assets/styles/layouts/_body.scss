@@ -35,6 +35,7 @@ html{
     .skill{
       width: 25%;
       height: 25vw;
+      // background-image: url('~/assets/imgs/icons/skills/UXUI.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       @include fcenter;
@@ -54,9 +55,14 @@ html{
         color: $very_dark_green;
         opacity: 0;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
         transition: 400ms;
         backdrop-filter: blur(0);
         padding: 0.5rem;
+        width: 100%;
+        height: 50%;
       }
 
       h3{
@@ -68,7 +74,8 @@ html{
       p{
         font-size: 1rem;
         font-weight: 600;
-        width: 80%;
+        width: 100%;
+        align-items: flex-start;
       }
 
 
@@ -91,6 +98,56 @@ html{
     text-align: left;
     margin: 0 0 6rem 15%;
     color: $very_dark_blue;
+    overflow: hidden;
+
+    &::before{
+      content: "attr(data-letter)";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      transform: translate(0, -100%);
+      color: $very_dark_blue;
+      transition: 300ms ;
+    }
+
+    &:hover::before{
+      content: "attr(data-letter)";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      transform: translate(0, -100%);
+      color: $very_dark_blue;
+      transition: 300ms ;
+    }
+    &:hover>span::after{
+      content: attr(data-letter);
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translate(0);
+      color: $almost_white_blue;
+    }
+
+    span{
+      position: relative;
+      overflow: hidden;
+
+
+      &::after{
+        content: attr(data-letter);
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(0, -100%);
+        color: $almost_white_blue;
+        transition: 400ms ;
+        transition-delay: 200ms;
+      }
+    }
   }
 
   .projects{
