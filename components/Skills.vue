@@ -3,6 +3,7 @@
       <h2>Skills</h2>
     <div class="skills">
       <div class="skill" v-for="skill in skills" :key="skill.skillName" v-bind:style="{'background-image': 'url(' + skill.imgPath + ')' }" >
+      <!-- <div class="skill" v-for="skill in skills" :key="skill.skillName" v-bind:style=" skill.image " > -->
         <h3>{{skill.skillName}}</h3>
         <p>{{skill.desc}}</p>
       </div>
@@ -19,7 +20,7 @@ export default {
         {
           skillName:'UX/UI',
           desc:'I like to try what\'s more user friendly. And I also like to make things great looking.',
-          image: 'background-image: url(\'~/assets/imgs/icons/skills/UXUI.jpg\');',
+          image: 'background-image: url(\'_nuxt/assets/imgs/icons/skills/UXUI.jpg\');',
           imgPath: '\'/_nuxt/assets/imgs/icons/skills/UXUI.jpg\'',
         },
         {

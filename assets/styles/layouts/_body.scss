@@ -18,11 +18,11 @@ html{
   background-repeat: repeat;
 
   h2{
-    font-size: 8rem;
+    font-size: 6rem;
     text-transform: uppercase;
     text-align: right;
     color: $almost_white_red;
-    margin: 0 15% 6rem 0;
+    margin: 0 15% 3rem 0;
   }
 
   .skills{
@@ -67,6 +67,7 @@ html{
 
       h3{
         font-size: 2.5rem;
+        line-height: 2.2rem;
         font-weight: 300;
         padding: 0.5rem 2rem;
       }
@@ -77,8 +78,6 @@ html{
         width: 100%;
         align-items: flex-start;
       }
-
-
     }
   }
 }
@@ -90,64 +89,46 @@ html{
   flex-direction: column;
   width: 100%;
   background-color: transparent;
-  margin-top: 100px;
+  margin: 100px 0;
 
   h2{
-    font-size: 8rem;
+    font-size: 6rem;
     text-transform: uppercase;
     text-align: left;
-    margin: 0 0 6rem 15%;
     color: $very_dark_blue;
-    overflow: hidden;
+    margin: 0 0 15% 3rem;
 
-    &::before{
-      content: "attr(data-letter)";
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      transform: translate(0, -100%);
-      color: $very_dark_blue;
-      transition: 300ms ;
-    }
+    // &::before{
+    //   content: "attr(data-letter)";
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    //   height: 100%;
+    //   width: 100%;
+    //   transform: translate(0, -100%);
+    //   color: $very_dark_blue;
+    //   transition: 300ms ;
+    // }
 
-    &:hover::before{
-      content: "attr(data-letter)";
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      transform: translate(0, -100%);
-      color: $very_dark_blue;
-      transition: 300ms ;
-    }
-    &:hover>span::after{
-      content: attr(data-letter);
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translate(0);
-      color: $almost_white_blue;
-    }
-
-    span{
-      position: relative;
-      overflow: hidden;
-
-
-      &::after{
-        content: attr(data-letter);
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(0, -100%);
-        color: $almost_white_blue;
-        transition: 400ms ;
-        transition-delay: 200ms;
-      }
-    }
+    // &:hover::before{
+    //   content: "attr(data-letter)";
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    //   height: 100%;
+    //   width: 100%;
+    //   transform: translate(0, -100%);
+    //   color: $very_dark_blue;
+    //   transition: 300ms ;
+    // }
+    // &:hover>span::after{
+    //   content: attr(data-letter);
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    //   transform: translate(0);
+    //   color: $very_dark_blue;
+    // }
   }
 
   .projects{
@@ -168,7 +149,7 @@ html{
         left: 100px;
         height: 350px;
         width: 650px;
-        background-color: $very_dark_blue;
+      background-image: url('~assets/imgs/SoundWave.svg');
         background-repeat: no-repeat;
         background-size: cover;
         filter: blur(10px);
@@ -187,14 +168,28 @@ html{
 
       .count{
         position: absolute;
-        top: 0;
+        top: 20px;
         left: 50%;
         text-align: right;
-        font-size: 7rem;
+        font-size: 10rem;
         font-weight: 900;
         transform: translate(0%, -100%);
         color: $red_pink;
         z-index: -5;
+        overflow: hidden;
+
+        &::before{
+          content: "01";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          transform: translate(100%, 0);
+          color: $very_dark_blue;
+          z-index: 1;
+          transition: 300ms ;
+        }
       }
 
       img{
@@ -267,20 +262,27 @@ html{
             position: relative;
             padding: 0 1rem;
 
-          &::after{
-            content: "-";
-            position: absolute;
-            top: 50%;
-            right: 0;
-            color: $almost_white_blue;
-            z-index: -1;
-            opacity: 1;
-            transform: translate(50%, -50%);
-          }
+            &::after{
+              content: "-";
+              position: absolute;
+              top: 50%;
+              right: 0;
+              color: $almost_white_blue;
+              z-index: -1;
+              opacity: 1;
+              transform: translate(50%, -50%);
+            }
 
-          &:last-of-type()::after{
-            content: "";
-          }
+            &:last-child()::after{
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 0;
+              color: $very_dark_blue;
+              z-index: 1;
+              opacity: 1;
+              transform: translate(50%, -50%);
+            }
           }
         }
       }

@@ -1,7 +1,12 @@
 @import url("https://use.typekit.net/frs1swj.css");
 // sofia pro -> for the majority of the site
 
-html
-{
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+// Titan One -> for titles...
+
+html{
   font-family: sofia-pro, sans-serif;
+}
+h1,h2,h4{
+  font-family: Titan one;
 }

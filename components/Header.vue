@@ -10,7 +10,7 @@
       </a>
     </nav>
       <section>
-        <a class="illu_link" href="https://drawkit.com/product/people-working-collaborating-illustrations"><div></div></a>
+        <a target="blank" class="illu_link" href="https://drawkit.com/product/people-working-collaborating-illustrations"><div></div></a>
         <div>
           <p class="welcome_text">Welcome to my </p>
           <h2 class="portfolio_text">PORTFOLIO</h2>

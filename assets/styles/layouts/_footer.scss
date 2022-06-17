@@ -1,0 +1,255 @@
+footer{
+  @include fcenter;
+  flex-direction: column;
+  position: relative;
+  background-color: $almost_black;
+  overflow: hidden;
+  -webkit-box-shadow: 0px -8px 20px 4px rgba(56,10,24,0.2);
+  box-shadow: 0px -8px 20px 4px rgba(56,10,24,0.2);
+  min-height: 800px;
+  color: $red_pink;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: $red_pink;
+      height: 0.5px;
+      width: 95%;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: $red_pink;
+      height: 0.5px;
+      width: 95%;
+    }
+
+  .footer_section{
+    @include fcenter;
+    flex-direction: column;
+    position: absolute;
+    gap: 8rem;
+    width: 95%;
+
+    .socials{
+      display: flex;
+      flex-direction: row;
+      align-items: self-start;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 96%;
+      position: relative;
+      padding-top: 32px;
+
+      &::before{
+        content: "";
+        position: absolute;
+        top: -30px;
+        background-color: $red_pink;
+        height: 0.5px;
+        width: 100%;
+      }
+      &::after{
+        content: "Socials";
+        position: absolute;
+        top: -65px;
+        left: -20px;
+        color: $red_pink;
+        border: solid 1px $red_pink;
+        padding: 8px 16px;
+        border-radius: 32px;
+        font-family: Titan one;
+      }
+
+      .my_socials{
+        @include fcenter;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        p{
+          text-align: left;
+          width: 100%;
+        }
+
+        .socials_logos{
+          @include fcenter;
+          flex-direction: row;
+          gap: 4rem;
+
+          .socials_logo{position: relative;
+            flex-direction: column;
+
+            .social_link{
+              transform: rotateX(-90deg) translateZ(30px);
+            }
+
+            &:hover .social_link{
+              transform: rotateX(0) translateZ(30px);
+            }
+            &:hover a{
+              transform: rotateX(90deg) translateZ(30px);
+            }
+
+            a{
+              position: absolute;
+              transform: rotateX(0) translateZ(30px);
+              transition: 500ms;
+              height: 48px;
+              width: 48px;
+
+
+              img{
+                height: 100%;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+
+      .share_portfolio{
+        @include fcenter;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        p{
+          text-align: right;
+          width: 100%;
+        }
+
+        .share_buttons{
+          @include fcenter;
+          flex-direction: row;
+          gap: 1rem;
+
+          .share_button,
+          .share_text,
+          .share_link{
+            height: 48px;
+            width: 96px;
+            transition: 500ms;
+          }
+          .share_text,
+          .share_link{
+            @include fcenter;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+
+          .share_button{
+            position: relative;
+            transform-style: preserve-3d;
+
+            &:hover .share_link
+            {
+              transform: rotateX(0) translateZ(30px);
+            }
+            &:hover .share_text
+            {
+              transform: rotateX(-90deg) translateZ(30px);
+            }
+            .share_text{
+              transform: (0);
+            }
+            .share_link{
+              transform: rotateX(90deg) translateZ(30px);
+            }
+            .facebook_link,
+            .twitter_link,
+            .linkedin_link{
+              color: white;
+              background-color: $red_pink;
+            }
+            // .facebook_link{
+            //   background-color: $facebook;
+            // }
+            // .twitter_link{
+            //   background-color: $twitter;
+            // }
+            // .linkedin_link{
+            //   background-color: $linkedin;
+            // }
+            .facebook,
+            .twitter,
+            .linkedin{
+              color: $red_pink;
+              background-color: transparent;
+            }
+            // .facebook{
+            //   color: $facebook;
+            // }
+            // .twitter{
+            //   color: $twitter;
+            // }
+            // .linkedin{
+            //   color: $linkedin;
+            // }
+          }
+        }
+      }
+    }
+    .contact{
+      @include fcenter;
+      position: relative;
+      width: 96%;
+      gap: 4rem;
+
+      p{
+        margin-bottom: 1rem;
+      }
+
+      div{
+        @include fcenter;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .illu_contact{
+        height: 300px;
+        width: 400px;
+
+        div{
+          width: 100%;
+          height: 100%;
+          background-image: url('~assets/imgs/illustrations/contact.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          -moz-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+          filter: FlipV;
+        }
+      }
+
+      &::before{
+        content: "";
+        position: absolute;
+        top: -30px;
+        background-color: $red_pink;
+        height: 0.5px;
+        width: 100%;
+      }
+      &::after{
+        content: "Contact";
+        position: absolute;
+        top: -65px;
+        right: -20px;
+        color: $red_pink;
+        border: solid 1px $red_pink;
+        padding: 8px 16px;
+        border-radius: 32px;
+        font-family: Titan one;
+      }
+    }
+  }
+}
+
+
